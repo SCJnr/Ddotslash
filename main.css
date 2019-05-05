@@ -1,0 +1,138 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    height: 100%;
+}
+
+body {
+    background: url(Bkg.gif) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.menu-btn {
+    position: fixed;
+    margin: 1.2em;
+    bottom: 4%;
+    left: 48%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: crosshair;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+i {
+    outline: none;
+    padding: 0.8em;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+}
+
+.row,
+.col-lg {
+    margin: 0 !important;
+    padding:  !important;
+}
+
+.col-lg {
+    height: 100vh;
+}
+
+.col-lg.overlay {
+    background: #3d303d;
+    position: absolute;
+    opacity: 0;
+}
+
+.overlay h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 280px;
+    font-family: Poppins;
+    font-weight: 800;
+    color: #161116;
+}
+
+ul {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    font-size: 30px;
+}
+
+li {
+    margin: 0;
+    padding-top: 2%;
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: bold;
+    color: #a9a6a9;
+    text-align: center;
+    cursor: crosshair;
+}
+
+li a {
+    margin: 0;
+    padding-top: 2%;
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: bold;
+    color: #a9a6a9;
+    text-align: center;
+    cursor: crosshair;
+
+}
+
+@media (max-width: 900px) {
+
+    html,
+    body {
+        width: 70%;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    ul {
+        top: 46%;
+    }
+
+    li {
+        padding-top: 40px;
+    }
+
+    .col-lg.overlay {
+        width: 100%;
+    }
+
+    .overlay h1 {
+        font-size: 140px;
+    }
+
+    .col-lg h1 {
+        font-size: 150%;
+    }
+}
+
+#load {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0, 0, 0, 0.25)
+}
